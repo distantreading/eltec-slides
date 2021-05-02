@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- CUSTOMIZE THIS! -->
+<title>CA16204</title>
+<meta name="author" content="Christof Schöch">
+<!-- END -->
+<meta name="description" content="Slides">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+<!-- Code syntax highlighting -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
+<!-- Printing and PDF exports -->
+<script>
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="reveal">
+<div class="slides">
+<section data-markdown="" data-separator="^\n-\n" data-separator-vertical="^\n--\n" data-charset="utf-8" data-background-image="img/basics/distantreading_icon-tp.png" data-background-size="100px" data-background-position="right 10px top 10px">
+<script type="text/template">
+
+<!-- THIS IS WHERE THE CONTENT GOES! -->
+<!-- Any section element inside of this container is displayed as a slide -->
+
+##Distant Reading for European Literary History. A COST Action
+<img height="50" data-src="img/basics/distantreading_logo.jpg"></img>
+<hr/>
+<br/>Christof Schöch (Trier, Germany)
+<br/>DayofDH 2021, April 2021
+<hr/>
+<br/>website: http://www.distant-reading.net
+<br/>slides: https://dh-trier.github.io/distant-reading
+<br/>
+<hr/>
+<a href="http://www.cost.eu"><img height="80" data-src="img/basics/cost-and-eu.png"></img></a>
+
+
+
+-
+# Overview
+1. [What are COST Actions?](#/2)
+2. [What is DISTANT READING about?](#/3)
+3. [Text Collection Building](#/4)
+4. [Methods and Tools](#/5)
+5. [Literary History and Theory](#/6)
+6. [Conclusions](#/7)
+
+
+-
+# 1. What are COST Actions?
+
+--
+## Networking Grants
+* Support network and capacity building around specific research topics <!-- .element: class="fragment" data-fragment-index="1" -->
+* Networks of European countries and international partners <!-- .element: class="fragment" data-fragment-index="2" -->
+* Around 300 Actions are running in parallel (very few of them in the Humanities) <!-- .element: class="fragment" data-fragment-index="3" -->
+
+--
+## Some Actions relevant to DH
+* [Interedition](http://www.interedition.eu/), 2008-2012
+* [Women Writers In History](http://www.womenwriters.nl/index.php/COST_Action), 2009-2013
+* [European Network of e-Lexicography](https://www.elexicography.eu/), 2013-2017 
+* [Reassembling the Republic of Letters](http://www.republicofletters.net/), 2015-2018
+* [NEP4DISSENT - Cultures of Dissent](https://nep4dissent.eu/), 2017-2021
+* [Nexus Linguarum](https://nexuslinguarum.eu/), 2019-2023
+
+
+--
+## Some key features
+* Action duration is usually 4 years <!-- .element: class="fragment" data-fragment-index="1" -->
+* Structured into working groups <!-- .element: class="fragment" data-fragment-index="2" -->
+* No funding for staff, only for networking activities <!-- .element: class="fragment" data-fragment-index="3" -->
+* Various forms of "networking activities" <!-- .element: class="fragment" data-fragment-index="4" -->
+
+
+--
+## COST networking activities
+* Working Group Meetings <!-- .element: class="fragment" data-fragment-index="1" -->
+* Training Schools <!-- .element: class="fragment" data-fragment-index="2" -->
+* Short Term Scientific Missions <!-- .element: class="fragment" data-fragment-index="3" -->
+* Conference Grants <!-- .element: class="fragment" data-fragment-index="4" -->
+
+
+-
+# 2. What is *Distant Reading for European Literary History* about?
+
+--
+## The term "Distant Reading"
+* Term first used by Franco Moretti ("second-hand" reading) <!-- .element: class="fragment" data-fragment-index="1" -->
+* Has then broadened in meaning to mean any computational analysis of literary texts <!-- .element: class="fragment" data-fragment-index="2" -->
+* Narrower term: stylometry, in the sense of quantitative methods for authorship attribution <!-- .element: class="fragment" data-fragment-index="3" -->
+* New term: Computational Literary Studies <!-- .element: class="fragment" data-fragment-index="4" -->
+
+--
+## Action: Research objectives
+* Resources: Build a multilingual reference collection of European novels ("ELTeC") <!-- .element: class="fragment" data-fragment-index="1" -->
+* Methods: Explore, evaluate, adapt and share computational methods of text analysis for ELTeC <!-- .element: class="fragment" data-fragment-index="2" -->
+* Theory: Think through consequences of digital data and methods for literary history and theory  <!-- .element: class="fragment" data-fragment-index="3" -->
+
+--
+## Action: Networking objectives
+* Bring together corpus linguists, computational linguists, digital literary scholars, literary historians and theorists <!-- .element: class="fragment" data-fragment-index="1" -->
+* Spread and share competencies in the three areas above among these groups <!-- .element: class="fragment" data-fragment-index="2" -->
+* Support relevant collaborative grant proposals on the national and European levels <!-- .element: class="fragment" data-fragment-index="3" -->
+
+--
+## Current Network
+* 32 countries are involved 
+* 200+ scholars are participating
+* several spin-off projects
+* a follow-up project (CLS INFRA)
+
+
+--
+## Key Output: ELTeC
+<a href="img/eltec-overview.png"><img height="250" data-src="img/eltec-overview.png"></img></a>
+* European Literary Text Collection (ELTeC)
+* Comparable sets of novels for at least 10 European languages
+* Each set: 100 novels published between 1840 and 1920
+* Currently: over 1300 novels published! 
+* https://distantreading.github.io/ELTeC/
+* ELTeC is a key output and basis for further work! 
+
+
+-
+# 3. Text Collection Building
+
+--
+## European Literary Text Collection (ELTeC)
+* Comparable sets of novels for at least 10 European languages
+* Each set: 100 novels published between 1840 and 1920
+* Extensions (chronologically or simply additional texts)
+* WG leads: Carolin Odebrecht (DE), Lou Burnard (UK), Borja Navarro Colorado (SP), Martina Scholger (AT)
+* Currently: more than 1300 novels published
+* More information: https://distantreading.github.io/ELTeC/
+
+--
+## Collection building: text selection
+* (1) Eligibility: In order to be included, a text must...
+    * have been first published as a book between 1850 and 1919 <!-- .element: class="fragment" data-fragment-index="1" -->
+    * have been published in a European country within a decade from their first publication <!-- .element: class="fragment" data-fragment-index="2" -->
+    * be a novel, i.e. a fictional prose narrative of a minimum length of 10,000 words <!-- .element: class="fragment" data-fragment-index="3" -->
+    * have originally been written in the language of the given subcollection <!-- .element: class="fragment" data-fragment-index="4" -->
+
+--
+## Collection building: text selection
+* (2) Composition: Among the novels in each language subcollection...
+    * at least 10% (ideally more) have been written by female authors  <!-- .element: class="fragment" data-fragment-index="1" -->
+    * at least 30% are rarely reprinted novels <!-- .element: class="fragment" data-fragment-index="2" -->
+    * at least 20% are short (10-50k words), at least 20% are long (>100k words) novels <!-- .element: class="fragment" data-fragment-index="3" -->
+    * 9-11 authors are represented with three novels <!-- .element: class="fragment" data-fragment-index="4" -->
+    * the novels should be spread out evenly across the entire period <!-- .element: class="fragment" data-fragment-index="5" -->
+
+--
+## ELTeC Overview
+<img height="450" data-src="img/eltec-overview.png"></img>
+<br/>https://distantreading.github.io/ELTeC/ 
+
+
+--
+## Collection building: Text encoding
+* All texts are encoded in XML-TEI (Text Encoding Initiative) <!-- .element: class="fragment" data-fragment-index="1" -->
+* There are three levels of encoding, with increasingly detailed markup <!-- .element: class="fragment" data-fragment-index="2" -->
+    * level 0: very simple / minimal markup
+    * level 1: richer, more 'semantic' markup
+    * level 2: text with linguistic annotation
+
+--
+## Some challenges 
+* Different states of digitization in various formats (e.g.: French vs. Romanian) <!-- .element: class="fragment" data-fragment-index="1" -->
+* Most metadata relevant to composition is not included in catalogs; e.g. novel type, author gender <!-- .element: class="fragment" data-fragment-index="2" -->
+* Varying writing systems used (e.g.: Romanian 'transition alphabet') <!-- .element: class="fragment" data-fragment-index="3" -->
+* Varying traditions of novel length (e.g.: few Slovenian 'long' novels) <!-- .element: class="fragment" data-fragment-index="4" -->
+* corpus composition criteria as a double-edged sword (under-represented categories in under-represented literary traditions) <!-- .element: class="fragment" data-fragment-index="5" -->
+* need for stability vs. adjustment of composition and encoding guidelines <!-- .element: class="fragment" data-fragment-index="6" -->
+
+
+-
+# 4. Methods and Tools
+
+
+--
+## Objectives
+<br/>
+* Adapt Distant Reading methods to multiple European languages <!-- .element: class="fragment" data-fragment-index="1" -->
+* Develop cross-linguistic use of Distant Reading methods <!-- .element: class="fragment" data-fragment-index="2" -->
+* Spread Distant Reading competencies across Europe (ECI / ITC) <!-- .element: class="fragment" data-fragment-index="3" -->
+* WG leads: Joanna Byszuk (PL), George Mikros (GR), Fotis Jannidis (DE), Yaakov HaCohen-Kerner (ISR) <!-- .element: class="fragment" data-fragment-index="4" -->
+
+--
+## Example for Adaptation: Stylometry
+* Computational Authorship Attribution <!-- .element: class="fragment" data-fragment-index="1" -->
+* Based on the word frequency profiles of texts <!-- .element: class="fragment" data-fragment-index="2" -->
+* Multiple small differences are decisive (Burrows) <!-- .element: class="fragment" data-fragment-index="3" -->
+* Applications <!-- .element: class="fragment" data-fragment-index="4" -->
+   * Elena Ferrante / Domenico Starnone + Anita Raja
+   * Robert Galbraith (Joan K. Rowlings): The Cuckoo's Calling
+   * Corneille and Molière
+   * many more
+
+
+--
+## Example for Adaptation: Stylometry
+<img height="450" data-src="img/evert-delta.jpg"></img>
+
+--
+## Example for Adaptation: Stylometry
+<img height="450" data-src="img/delta-example-label.png"></img>
+
+
+--
+## Cross-Language Distant Reading:<br/>Direct Speech Recognition
+<img height="450" data-src="img/cost-direct-speech.jpg"></img>
+
+--
+## Cross-Language Distant Reading:<br/>Direct Speech Recognition
+<img height="450" data-src="img/direct-speech-both.png"></img>
+
+
+
+
+-
+# 5. Literary History and Theory
+
+--
+## Objectives
+<br/>
+* Think through consequences for literary history and theory <!-- .element: class="fragment" data-fragment-index="1" -->
+* Key concepts: style, genre, authorship, periodization, canonization, intertextuality, etc. <!-- .element: class="fragment" data-fragment-index="2" -->
+* WG leads: Antonija Primorac (HR), Rosario Arias (SP) <!-- .element: class="fragment" data-fragment-index="3" -->
+
+--
+## Example of canonization: concept
+* Required reading in school or university <!-- .element: class="fragment" data-fragment-index="1" -->
+* Enduring interpretability <!-- .element: class="fragment" data-fragment-index="2" -->
+* Complexity; quality; importance <!-- .element: class="fragment" data-fragment-index="3" -->
+* Critical and/or commercial success <!-- .element: class="fragment" data-fragment-index="4" -->
+* Literary novels as non-genre novel <!-- .element: class="fragment" data-fragment-index="5" -->
+
+--
+## Example of canonization: indicators 
+* text-external <!-- .element: class="fragment" data-fragment-index="1" -->
+    * Reprint and sales figures <!-- .element: class="fragment" data-fragment-index="2" -->
+    * Library holding data <!-- .element: class="fragment" data-fragment-index="3" -->
+    * Number of entries in academic bibliographies <!-- .element: class="fragment" data-fragment-index="4" -->
+    * Amount of text in reference literary histories <!-- .element: class="fragment" data-fragment-index="5" -->
+    * Number of Wikipedias with an article <!-- .element: class="fragment" data-fragment-index="6" -->
+    * Number of mentions on reading lists <!-- .element: class="fragment" data-fragment-index="7" -->
+    * Literary prizes received <!-- .element: class="fragment" data-fragment-index="8" -->
+* text-internal <!-- .element: class="fragment" data-fragment-index="9" -->
+    * Lexical complexity / difficulty <!-- .element: class="fragment" data-fragment-index="10" -->
+    * Syntactic complexity / sentence length <!-- .element: class="fragment" data-fragment-index="11" -->
+    * Combination: Measures of readability <!-- .element: class="fragment" data-fragment-index="12" -->
+    * Complexity of plot, characters, meaning <!-- .element: class="fragment" data-fragment-index="13" -->
+
+    
+
+-
+# Time for questions! 
+
+--
+## To learn more: websites
+* http://distant-reading.net/
+* https://github.com/distantreading
+* http://www.cost.eu/COST_Actions/ca/CA16204
+* https://twitter.com/DistantReading
+
+--
+## To learn more: readings
+<small>
+* Burnard, Lou, Schoöch, and Odebrecht. “In Search of Comity: TEI for Distant Reading.” November 1, 2019. https://doi.org/10.5281/zenodo.3552489.
+* Byszuk, Joanna, Michał Woźniak, Mike Kestemont, Albert Leśniak, Wojciech Łukasik, Artjoms Šeļa, and Maciej Eder. “Detecting Direct Speech in Multilingual Collection of 19th Century Novels.” In Proceedings of LT4HALA 2020-1st Workshop on Language Technologies for Historical and Ancient Languages, edited by Rachele Sprungoli and Marco Passarotti, https://lrec2020.lrec-conf.org/media/proceedings/Workshops/Books/LT4HALAbook.pdf:100–104. Paris: European Language Resources Association (ELRA), 2020.
+* Cinková, Silvie, et al. “Evaluation of Taggers for 19th-Century Fiction.” DH_Budapest_2019, edited by Gábor Pálko, ELTE, 2019, http://elte-dh.hu/dh_budapest_2019-abstract-booklet/.
+* Evert, Stefan, Fotis Jannidis, Thomas Proisl, Steffen Pielström, Thorsten Vitt, Christof Schöch, and Isabella Reger. “Understanding and Explaining Distance Measures for Authorship Attribution.” Digital Scholarship in the Humanities, 2017. https://academic.oup.com/dsh/article-pdf/32/suppl_2/ii4/21298943/fqx023.pdf.
+* Patras, Roxana, Ioana Galleron, Camelia GRĂDINARU, Ioana Lionte, and Lucreţia Pascaru. “The Splendors and Mist(Eries) of Romanian Digital Literary Studies: A State-of-the-Art Just before Horizons 2020 Closes Off.” Hermeneia 23 (2019): 207–22.
+* Stankovic, Ranka, Francesca Frontini, Tomaž Erjavec, and Carmen Brando. “Named Entity Recognition for Distant Reading in Several European Literatures.” In DH_Budapest_2019, edited by Gábor Pálko. Budapest: ELTE, 2019. http://elte-dh.hu/dh_budapest_2019-abstract-booklet/.
+* Schöch, Christof; Roxana Patras; Tomaž Erjavec; Diana Santos: "Creating the European Literary Text Collection (ELTeC): Challenges and Perspectives", submitted. 
+
+</small>
+
+--
+<br/>
+<br/>
+<br/>
+## Danke! · Thank you! · Merci! · Ačiū!
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<hr/>
+<p><a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a><br/></p>
+<hr/>
+<br/>
+<br/>
+</script>
+</section>
+
+
+
+<!-- DON'T TOUCH UNLESS YOU KNOW WHAT YOU'RE DOING :-) -->
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script>
+// Full list of configuration options available at:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: false,
+    transition: 'slide', // none/fade/slide/convex/concave/zoom
+    // Optional reveal.js plugins
+    dependencies: [
+        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true },
+        { src: 'plugin/notes/notes.js', async: true }
+        ]
+    });
+</script>
+</body>
+</html>
