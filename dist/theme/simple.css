@@ -97,16 +97,16 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 
 /* Slide title */
 .reveal h3 {
-  font-family: Lato, Impact, sans-serif;
+  font-family: Alegreya Sans, Lato, Impact, sans-serif;
   font-weight: normal;
-  margin: 0px 0px 50px 0px;
-  font-size: 1.3em; }
+  margin: 0px 0px 0px 0px;
+  font-size: 1.1em; }
 
 /* Slide title slim */
 .reveal h4 {
   font-family: Lato, Impact, sans-serif;
-  margin: -50px 0px 0px 0px;
-  font-size: 1.3em; }
+  margin: -40px 0px -40px 0px;
+  font-size: 1.1em; }
 
 .reveal h1 {
   text-shadow: none; }
