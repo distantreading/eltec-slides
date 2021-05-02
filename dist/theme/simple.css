@@ -84,28 +84,28 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 
 /* Slideset title */
 .reveal h1 {
-  font-family: Lato, Impact, sans-serif;
+  font-family: Ubuntu, Lato, Impact, sans-serif;
   color: darkblue;
   margin: 20px 0 20px 0;
-  font-size: 1.2em; }
+  font-size: 1.1em; }
 
 /* Section title */
 .reveal h2 {
-  font-family: Lato, Impact, sans-serif;
+  font-family: Ubuntu, Lato, Impact, sans-serif;
   margin: 150px 0px 0px 0px;
   font-size: 1.8em; }
 
 /* Slide title */
 .reveal h3 {
-  font-family: Alegreya Sans, Lato, Impact, sans-serif;
+  font-family: Ubuntu, Lato, Impact, sans-serif;
   font-weight: normal;
-  margin: 0px 0px 0px 0px;
-  font-size: 1.1em; }
+  margin: 0px 0px 40px 0px;
+  font-size: 1.2em; }
 
 /* Slide title slim */
 .reveal h4 {
-  font-family: Lato, Impact, sans-serif;
-  margin: -40px 0px -40px 0px;
+  font-family: Ubuntu, Lato, Impact, sans-serif;
+  margin: -10px 0px -10px 0px;
   font-size: 1.1em; }
 
 .reveal h1 {
@@ -117,7 +117,8 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .reveal p {
   margin: 20px 0;
   font-family: Alegreya Sans, Impact, sans-serif;
-  line-height: 1.2; }
+  font-size: 0.9em; 
+  line-height: 1.1; }
 
 /* Remove trailing margins after titles */
 .reveal h1:last-child,
@@ -146,7 +147,9 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .reveal dl,
 .reveal ul {
   display: inline-block;
-  font-family: Alegreya Sans, Lato, Impact, sans-serif;
+  font-size: 0.8em; 
+  line-height: 1.5; 
+  font-family: "Alegreya Sans", Lato, Impact, sans-serif;
   text-align: left;
   margin: 0 0 0 1em; }
 
@@ -154,10 +157,12 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   list-style-type: decimal; }
 
 .reveal ul {
-  font-family: Alegreya Sans, Lato, Impact, sans-serif;
+  font-family: "Alegreya Sans", Lato, Impact, sans-serif;
   list-style-type: disc; }
 
 .reveal ul ul {
+  font-size: 0.8em; 
+  line-height: 1.2; 
   list-style-type: square; }
 
 .reveal ul ul ul {
@@ -207,6 +212,8 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 
 .reveal code {
   font-family: monospace;
+  font-size: 0.8em;
+  color: darkgreen;
   text-transform: none; }
 
 .reveal pre code {
