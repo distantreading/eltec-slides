@@ -28,7 +28,7 @@
 
 <textarea data-template>
 
-# ELTeC: European Literary Text Collection
+# Computational Literary Studies goes Multilingual: Challenges and Lessons Learned (ELTeC)
 
 <img data-src="img/basics/distant-reading_logo.png" height="40"></img>
 <br/><br/>
@@ -38,172 +38,175 @@
 <br/>
 
 ***
-Mai 2021
+Animating Text, Newcastle University, May 2021
 https://distantreading.github.io/eltec-slides/
 ***
 <img data-src="img/basics/tcdh-slim.png" height="50"></img>&nbsp;&nbsp;&nbsp;<img data-src="img/basics/uni-trier.png" height="50"></img>&nbsp;&nbsp;&nbsp;<img data-src="img/basics/cost-and-eu.png" height="70"></img>
 
 
+::
+- Happy to be here, thanks for the invite
+- Multilingual approaches in CLS are on the rise
+  - 
+- Need to be supported by three things
+  - multilingual data
+  - methods to handle it
+  - people who know the context
+- So I believe it is inherently a community effort
+- At least, that is the premise of ELTeC, the "European Literary Text Collection"
+
+
 --
-### Plan
-1. [Qu'est-ce qu'ELTeC ?](#/2)
-2. [Critères de composition du corpus](#/3)
-3. [Principes d'encodage du texte](#/4)
-4. [Publication d'ELTeC](#/5)
-4. [Scénarios d'usage d'ELTeC](#/6)
+### Overview
+1. [What is ELTeC?](#/2)
+2. [Composition criteria](#/3)
+3. [Encoding principles](#/4)
+4. [Publication strategy](#/5)
+4. [Usage scenarios](#/6)
 5. [Conclusion](#/7)
 
 ::
-- Je me propose donc de vous présenter ELTeC, 
-- le corpus multilingue de romans européens. 
-- Je parlerai des critères de composition
-- Et, plus brièvement des principes d'encodage du texte
-- Et de la stratégie de publication; 
-- En revanche, je parlerai un peu plus des scénarios d'usage d'ELTeC,
-- avant de conclure. 
-
+- So I'd like to present ELTeC today with a focus on multilingualism
 
 
 --
-## (1) Qu'est-ce qu'ELTeC ?
-
-::
-- Qu'est-ce que donc ELTeC ?
-- Bon, l'abréviation veut dire "European Literary Text Collection" 
-- C'est une ressource en développement dans le cadre d'une Action COST
+## (1) What is ELTeC?
 
 
 ---
-### ELTeC en contexte 
+### ELTeC in context 
 * COST Action "Distant Reading for European Literary History" <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
-  * Réseau de recherche (31 pays, 200+ chercheurs et chercheuses)
-  * Objectif: Relancer la recherche numérique multilingue sur l'histoire du roman européen 
-* Domaines d'activité:  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
-  * Créer un corpus multilingue du roman européen
-  * Développer des méthodes de recherche numériques appropriées
-  * Réflexion sur les conséquences théoriques
-  * Création d'un réseau de recherche à travers l'Europe
-  * 'Capacity building': formations, échanges, projets
-
-
-::
-- L'Action COST en question est intitulée "Distant Reading for European Literary History"
+  * Research network (31 countries, 200+ researchers)
+  * Ambition: Foster digital, cross-lingual research into the history of the European novel
+* Areas of activity:  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+  * Build a multilingual corpus of the European novel
+  * Develop appropriate, digital methods of analysis
+  * Thinking about the theoretical consequences
+  * Creation of a network of researchers across Europe
+  * Capacity building: training schools, exchanges, joint projects
 
 
 ---
 ### "European Literary Text Collection"
-* Un corpus multilingue du roman européen <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
-  * Pour la période 1840 à 1920 
-  * Au moins 10 langues différentes
-  * Collections comparables de 100 romans pour chaque langue
-* Caractéristiques-clés <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
-  * Corpus représentant la variété de la production
-  * Textes encodés en XML-TEI et annotés 
-  * Corpus publiés sous licence ouverte
-* Plus d'informations  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
+* A multilingual corpus of the European novel <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+  * Time period: 1840-1920 (production, availability, OCR, copyright)
+  * At least 10 different languages (currently: 8 complete, 10 more in progess)
+  * Comparable (!) collections of 100 novels per language
+* Key characteristics <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+  * Each corpus represents the variety of production
+  * Texts encoded in XML-TEI and linguistically-annotated (POS, NE)
+  * Everything published under open licences (CC)
+* More information  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
   * http://www.distant-reading.net/eltec/
-  * Dernier 'release': [v1.1.0, Avril 2021, 1200 romans](https://github.com/COST-ELTeC/ELTeC)
+  * Latest release: [v1.1.0, April 2021, 14 collections, 1200 novels](https://github.com/COST-ELTeC/ELTeC)
 
 ---
-### Progrès du travail sur ELTeC
+### Progress of our work on ELTeC
 <img data-src="img/eltec-overview_numnovels.png" height="500"></img>
-<br/><small>Voir: https://distantreading.github.io/ELTeC/</small>
+<br/><small>See: https://distantreading.github.io/ELTeC/</small>
 
 
 
 --
-## (2) Critères de composition des corpus
+## (2) Composition criteria
 
 ---
-### Critères de pertinence
-* Romans (= prose narrative fictionelle d'une certaine longueur)
-* Longueur minimale: 10.000 mots
-* Romans en langue originale
-* Romans parus en Europe
+### Eligibility criteria
+* Novels, i.e. narrative, fictional prose of a certain length
+* Minimal length: 10.000 words
+* Novels written originally in the language of the collection
+* Novels first (or at least also) published in Europe
 
 ---
-### Critères de composition
-* Objectifs <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
-  * Comparabilité des collections
-  * Représenter la variabilité de la production romanesque
-  * Aller au-delà des textes canonisés
-* Critères inclus <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+### Composition criteria
+* Objectives <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+  * Comparability of the collections
+  * Represent the diversity of the novel production
+  * Go beyond the canon (and the usual collections)
+* Criteria taken into account <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
   * Période de parution: 1840-59, 1860-79, 1880-99, 1900-1919 
   * Longueur du texte: short (10-50k), medium (50-100k), long (100k+) 
-  * Sexe de l'auteur(e): masculin, féminin, divers/mixte 
-  * Réimpressions 1970-2010: low (0-1), high (2+) 
-
+  * Author gender: male, female, diverse/mixed
+  * Reprint count, 1970-2010: low (0-1), high (2+) 
+  * Number of novels per author 3 (9-11 authors), 1 (otherwise)
+  
 
 ---
-#### Composition des collections
-<img data-src="img/mosaic-eng.svg" height="400"></img>&nbsp;&nbsp;&nbsp;<img data-src="img/mosaic-rom.svg" height="400"></img>
-
+#### Composition of the collections
+<br/>
 <small>
 
-|ELTeC-eng|||ELTeC-rom|
-|:---:|:---:|:---:|:---:|
-|100 romans |&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;| 95 romans|
-|EC5 100 |&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;| EC5 80|
-|excellente balance |&nbsp;&nbsp;&nbsp;&nbsp;|| balance difficile à obtenir|
+|ELTeC-eng|ELTeC-rom|
+|:---:|:---:|
+|<img data-src="img/mosaic-eng.svg" height="400">|<img data-src="img/mosaic-eng.svg" height="400">|
+|100 novels<br/>EC5 100<br/>excellent balance| 95 novels<br/>EC5 80<br/>balance difficult to obtain|
+|||
 
 </small>
 
 ---
-#### Le paradoxe de la diversité
+#### The diversity paradox
 <a href="img/eltec-overview_paradox.png"><img data-src="img/eltec-overview_paradox.png" height="400"></img></a>
 
-* Trois objectifs
-  * comparabilité des collections (=> critères stricts)
-  * variété des textes (=> critères stricts)
-  * variété des traditions littéraires (=> critères souples)
+* Three objectives
+  * Comparability of the collections (enabled by strict criteria)
+  * Broad diversity of texts (enforced by strict criteria)
+  * Diversity of traditions represented (easier with loose criteria)
 
 
 --
-## (3) Principes d'encodage des textes
+## (3) Encoding principles
 
 ---
-### Trois niveau d'encodage
-* L'encodage en XML-TEI va de soi <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
-* Les trois niveaux <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
-  * Level 0: encodage TEI minimal (métadonnés + `div`, `p`, `hi`)
-  * Level 1: encodate TEI sémantique (`foreign`, `emph` etc.)
-  * Level 2: encodage TEI avec annotation au niveau des token (UPos)
-* Contrôlés par des schémas <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
-  * Système de schemas enchaînés
-  * Validation avec RelaxNG et Schématron
+### Three levels of encoding
+* Everything is encoded in XML-TEI (of course!?) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+* Three levels of encoding <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+  * Level 0: minimal TEI encoding (metadata + `div`, `p`, `hi`)
+  * Level 1: semantic TEI encoding (`foreign`, `emph` etc.)
+  * Level 2: TEI with token-level linguistic annotation (UPos)
+* Controlled by a set of schemas <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
+  * Schemas connected via "ODD chaining"
+  * Validation with RelaxNG and Schématron
+  * Validation socially enforced by Lou
+
 
 ---
-### Métadonnées 
-* Critères de composition (voir ci-dessus) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+### Metadata
+* Composition criteria (see above) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
 * Provenance <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
-  * source numérique
-  * source imprimée
-  * première édition
-* Type de roman <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
-  * Sous-genre du roman
-  * Forme narrative
-* Caractéristiques textuels <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="4" -->
-  * Langue
-  * Orthographe (originale, modernisée)
-  * Alphabet (latin, cyrillique, de transition)
-  * Niveau d'encodage (voir ci-dessus)
+  * digital source
+  * print source
+  * first édition
+* Type of novel (optional) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
+  * Subgenre of the novel
+  * Narrative perspective
+* Textual characteristics <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="4" -->
+  * Language
+  * Orthography (original vs. modernised)
+  * Alphabet (latin, cyrillic, transition)
+  * Encoding level (see above)
+
+
+::
+- Nothing special from the point of view of digital editing
+- But more detailed than what is standard in collection building
 
 
 --
-## (4) Publication d'ELTeC
+## (4) Publication strategy
 
 
 ---
-### Stratégie de publication
-* Pour les besoins du projet <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
-  * Espace de collaboration (XML) : [Github](https://github.com/cost-eltec)
-  * Publication de 'releases' avec DOI (XML) : Github + [Zenodo](https://zenodo.org/communities/eltec/)
-  * Apercu d'ensemble (HTML, XML) : [Github.io](https://distantreading.github.io/ELTeC/)
-* Plateformes de publication (en plus de Zenodo):  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+### Publication strategy
+* For the needs of the project <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+  * Space for collaboration (XML) : [Github](https://github.com/cost-eltec)
+  * Publication of 'releases' with DOI (XML) : Github + [Zenodo](https://zenodo.org/communities/eltec/)
+  * Overview (HTML, XML) : [Github.io](https://distantreading.github.io/ELTeC/)
+* Distribution platforms (beyond Zenodo):  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
   * [TEI Publisher](https://teipublisher.com/exist/apps/eltec/index.html)
   * [GAMS](http://glossa.uni-graz.at/context:eltec)
   * [TextGrid Rep](https://dev.textgridrep.org/browse/3tg6g.0)
-  * Prochainement: CLS INFRA
+  * Coming soon: CLS INFRA (new project)
 
 ---
 #### Github
@@ -227,42 +230,42 @@ https://teipublisher.com/exist/apps/eltec/index.html
 
 
 --
-## (5) Scénarios d'usage d'ELTeC
+## (5) Usage scenarios
 
 ---
-### Quelques scénarios
-* Objectifs partagées <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
-  * Adapter des méthodes existantes du "Distant Reading" aux multiples langues européennes
-  * Evaluer les méthodes dans un context multilingue 
-* Quelques exemples <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
-  * Annotation linguistique à travers de multiples langues: Cínkova et al. 2020
-  * Annotation multilingue des entités nommées: Frontini et al. 2020
-  * Identification du discours direct: Byszuk et al. 2020 
-  * Analyse des titres: Patras et al. 2021
-  * Méthodes d'attribution stilométrique: Schöch et al. 
+### Some scenarios
+* Shared objectives <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+  * Adapt existing statistical methods to the multiple european languages
+  * Evaluate these methods in a multilingual context (beyond eng, deu, fra)
+* Some examples <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+  * Linguistic annotation: Cínkova et al. 2020
+  * Annotation of Named Entities: Frontini et al. 2020
+  * Identification of direct speech: Byszuk et al. 2020 
+  * Title analysis: Patras et al. 2021
+  * Stylometric Authorship Attribution: Schöch et al. 
 
 
 ---
-### Identification du discours direct
+### Identification of direct speech
 <img data-src="img/byszuk-2020.png" height="400"></img>
 
-* Résultats-clés
-  * Emploi d'un "multilingual sentence embedding"
-  * Résultat: score F1 ~ 0.89 pour neuf langues
+* Key results
+  * "Multilingual sentence embeddings" clearly surpass baseline
+  * Performance: score F1 ~ 0.89 for all nine languages
 
 ---
-### Analyse des titres
+### Title analysis
 <img data-src="img/patras-2021_annotation.png" width="500"></img> <!-- .element: class="fragment fade-in-then-fade-out" data-fragment-index="1" -->
 <br/><img data-src="img/patras-2021_lengths.png" width="500"></img> <!-- .element: class="fragment fade-in-then-fade-out" data-fragment-index="2" -->
 
 ---
-### Stilometrie: Dendrogrammes
+### Stylometry: Dendrograms
 <a href="img/ELTeC-fra_eders-d_1000.png"><img height="500" data-src="img/ELTeC-fra_eders-d_1000.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="img/ELTeC-rom_eders-d_1000.png"><img height="500" data-src="img/ELTeC-rom_eders-d_1000.png"></a>
 <br/>ELTeC-fra &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ELTeC-rom
 
 
 ---
-### Stilométrie: Evaluation
+### Stylometry: Evaluation
 <a href="img/results_ELTeC-hun.svg"><img height="200" data-src="img/delta-hun.png"></a></img>&nbsp;&nbsp;&nbsp;<a href="img/results_ELTeC-fra.svg"><img height="200" data-src="img/delta-fra.png"></img></a><br/><a href="img/results_ELTeC-rom.svg"><img height="200" data-src="img/delta-rom.png"></a></img>&nbsp;&nbsp;&nbsp;<a href="img/results_ELTeC-slv.svg"><img height="200" data-src="img/delta-slv.png"></img></a><br/><br/>(Aktuell: deu, eng, fra, hun, por, rom, slv)
 
 
@@ -270,31 +273,31 @@ https://teipublisher.com/exist/apps/eltec/index.html
 ## Conclusion
 
 ---
-### Qu'est-ce qu'ELTeC, alors ?
-* Bien sûr, une ressource multilingue <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
-* Un processus d'apprentissage de la recherche collaborative <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
-* Un point de ralliement pour une communauté européenne, multilingue <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
-* Un point d'appui pour le développement de méthodes numériques <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="4" -->
-* Un début modeste pour une histoire littéraire européene qui soit numérique, inclusive, multilingue <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="5" -->
+### So, what is ELTEC?
+* A multilingual resource, of course <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+* A learning opportunity regarding collaborative research <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+* A rallying point for a European, multilingual community <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
+* A foundation for the development of cross-lingual methods <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="4" -->
+* A modest start for a history of European literature that would be truly digital, multilingual and diverse <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="5" -->
 
 
 ---
-### Un grand merci !
+### Thank you!
 <img height="500" data-src="img/danke.png">
 
 
 ---
-### Références bibliographiques 
+### References
 <small>
 	
-* Création d'ELTeC (choix)
+* Creation of ELTeC (selection)
   * Lou Burnard, Christof Schöch, Carolin Odebrecht: “In Search of Comity: TEI for Distant Reading”, in: _Journal of the Text Encoding Initiative_, accepted.
   * Christof Schöch, Roxana Patraș, Diana Santos, Tomaž Erjavec: “Creating the European Literary Text Collection (ELTeC): Challenges and Perspectives”, in: _Modern Languages Open_ (accepted). 
   * Cinková, Silvie, Tomaž Erjavec, Cláudia Freitas, et al., ‘Evaluation of Taggers for 19th-Century Fiction’, in DH_Budapest_2019, <http://elte-dh.hu/dh_budapest_2019-abstract-booklet/>
   * Frontini, Francesca, Carmen Brando, Joanna Byszuk et al., ‘Named Entity Recognition for Distant Reading’, in CLARIN Annual Conference 2020 Proceedings, pp. 27–41 <https://office.clarin.eu/v/CE-2020-1738-CLARIN2020_ConferenceProceedings.pdf>
 <br/><br/>
 
-* Utilisations d'ELTeC (choix)
+* Usage of ELTeC (selection)
   * Cinková, Silvie, and Jan Rybicki, ‘Stylometry in a Bilingual Setup’, in Proceedings of LREC 2020, pp. 977–984 <https://www.aclweb.org/anthology/2020.lrec-1.123/>
   * Byszuk, Joanna, Michał Woźniak, Mike Kestemont et al. ‘Detecting Direct Speech in Multilingual Collection of 19th Century Novels’, in Proceedings of LT4HALA 2020, pp. 100–104 <https://lrec2020.lrec-conf.org/media/proceedings/Workshops/Books/LT4HALAbook.pdf>
   * Mihurko-Poniž, Katja, Rosario Arias, J. Berenike Herrmann et al. ‘Thresholds to the “Great Unread”: Titling Practices across Multilingual Collections of European Novels’, Day of DH 2021, <https://www.youtube.com/watch?v=fMtkwCxkzfw>.
