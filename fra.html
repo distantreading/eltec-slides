@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<title>ELTeC</title>
+<title>ELTeC (FR)</title>
 
 <link rel="stylesheet" href="dist/reset.css">
 <link rel="stylesheet" href="dist/reveal.css">
@@ -38,7 +38,7 @@
 <br/>
 
 ***
-Colloque « Editions critiques multilingues », ACFAS 2021, Mai 2021
+EHESS, Paris, avril 2023
 https://distantreading.github.io/eltec-slides/
 ***
 <img data-src="img/basics/tcdh-slim.png" height="50"></img>&nbsp;&nbsp;&nbsp;<img data-src="img/basics/uni-trier.png" height="50"></img>&nbsp;&nbsp;&nbsp;<img data-src="img/basics/cost-and-eu.png" height="70"></img>
@@ -47,8 +47,7 @@ https://distantreading.github.io/eltec-slides/
 - Bonjour à tout le monde
 - C'est un plaisir d'être parmi vous. 
 - Je parlerai de "ELTeC"
-- Ce n'est pas à proprement parler un projet d'édition critique 
-- Mais c'est bien un projet d'édition de ressources textuelles multilingues. 
+- C'est un projet d'édition de ressources textuelles multilingues. 
 
 
 --
@@ -77,7 +76,7 @@ https://distantreading.github.io/eltec-slides/
 ::
 - Qu'est-ce que donc ELTeC ?
 - Bon, l'abréviation veut dire "European Literary Text Collection" 
-- C'est une ressource en développement dans le cadre d'une Action COST
+- C'est une ressource qui reste en développement même après la fin de l'Action COST
 
 
 ---
@@ -110,11 +109,16 @@ https://distantreading.github.io/eltec-slides/
 * Plus d'informations  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
   * http://www.distant-reading.net/eltec/
   * Dernier 'release': [v1.1.0, Avril 2021, 1200 romans](https://github.com/COST-ELTeC/ELTeC)
+  * Actuellement: 1200 (core) + 338 (plus) + 547 (extension) = 2085 romans  
 
 ---
 ### Progrès du travail sur ELTeC
-<img data-src="img/eltec-overview_numnovels.png" height="500"></img>
+<a href="img/eltec-overview-2023_core.png"><img data-src="img/eltec-overview-2023.png" height="500"></img></a>
 <br/><small>Voir: https://distantreading.github.io/ELTeC/</small>
+
+::
+- Cliquer pour voir le "core" en plus grand
+- Lien pour la version interactive
 
 
 
@@ -150,8 +154,8 @@ https://distantreading.github.io/eltec-slides/
 
 |ELTeC-eng|||ELTeC-rom|
 |:---:|:---:|:---:|:---:|
-|100 romans |&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;| 95 romans|
-|EC5 100 |&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;| EC5 80|
+|100 romans |&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;| 100 romans|
+|EC5 100 |&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;| EC5 83|
 |excellente balance |&nbsp;&nbsp;&nbsp;&nbsp;|| balance difficile à obtenir|
 
 </small>
@@ -164,6 +168,10 @@ https://distantreading.github.io/eltec-slides/
   * comparabilité des collections (=> critères stricts)
   * variété des textes (=> critères stricts)
   * variété des traditions littéraires (=> critères souples)
+
+:: 
+- On a essayé de réduire les effets du paradoxe en ayant des critères ambitieux mais assouplis
+- C'est d'ailleurs un dilemme récurrent : avec plusieurs langues, tout est plus difficile ; on fait donc presque forcément des choses techniquement moins avancées ; mais pas moins intéressantes ou complexes. 
 
 
 --
@@ -189,14 +197,16 @@ https://distantreading.github.io/eltec-slides/
   * source imprimée
   * première édition
 * Type de roman <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
-  * Sous-genre du roman
-  * Forme narrative
+  * Forme narrative (rarement)
+  * Sous-genre du roman (très rarement)
 * Caractéristiques textuels <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="4" -->
   * Langue
   * Orthographe (originale, modernisée)
   * Alphabet (latin, cyrillique, de transition)
   * Niveau d'encodage (voir ci-dessus)
 
+:: 
+- On renviendra à la question des sous-genres et des formes narratives dans la partie sur "Mining and Modeling Text" 
 
 --
 ## (4) Publication d'ELTeC
@@ -211,11 +221,10 @@ https://distantreading.github.io/eltec-slides/
 * Plateformes de publication (en plus de Zenodo):  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
   * [TEI Publisher](https://teipublisher.com/exist/apps/eltec/index.html)
   * [GAMS](http://glossa.uni-graz.at/context:eltec)
-  * [TextGrid Rep](https://dev.textgridrep.org/browse/3tg6g.0)
-  * Prochainement: CLS INFRA
+  * [TextGrid](https://dev.textgridrep.org/browse/3tg6g.0)
 * D'autres formats de publication  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
-  * Pour l'analyse avec des outils comme TXM ou Antconc
-  * Publication via des plateformes d'analyse comme CQW
+  * Fichier à télécharger, pour l'analyse avec des outils comme TXM ou Antconc
+  * Publication via des plateformes d'analyse comme TEI:TOK
 
 ---
 #### Github
@@ -236,6 +245,11 @@ https://zenodo.org/communities/eltec/
 
 https://teipublisher.com/exist/apps/eltec/index.html
 
+---
+#### TEI:TOK
+<img data-src="img/eltec-in-teitok.png" height="500"></img>
+
+https://quest.ms.mff.cuni.cz/teitok-dev/teitok/eltec/index.php
 
 
 --
@@ -252,6 +266,8 @@ https://teipublisher.com/exist/apps/eltec/index.html
   * Identification du discours direct: Byszuk et al. 2020 
   * Analyse des titres: Patras et al. 2021
   * Méthodes d'attribution stilométrique: Schöch et al. 
+  * Verbes de l'intériorité à travers le temps : Radak et al.
+  * Longueur des phrases à travers le temps : Schöch 2022 
 
 
 ---
@@ -264,18 +280,27 @@ https://teipublisher.com/exist/apps/eltec/index.html
 
 ---
 ### Analyse des titres
-<img data-src="img/patras-2021_annotation.png" width="500"></img> <!-- .element: class="fragment fade-in-then-fade-out" data-fragment-index="1" -->
-<br/><img data-src="img/patras-2021_lengths.png" width="500"></img> <!-- .element: class="fragment fade-in-then-fade-out" data-fragment-index="2" -->
-
----
-### Stilometrie: Dendrogrammes
-<a href="img/ELTeC-fra_eders-d_1000.png"><img height="500" data-src="img/ELTeC-fra_eders-d_1000.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="img/ELTeC-rom_eders-d_1000.png"><img height="500" data-src="img/ELTeC-rom_eders-d_1000.png"></a>
-<br/>ELTeC-fra &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ELTeC-rom
+<img data-src="img/patras-2021_annotation.png" width="500"></img>
+<br/><img data-src="img/patras-2021_lengths.png" width="500"></img>
 
 
 ---
 ### Stilométrie: Evaluation
-<a href="img/results_ELTeC-hun.svg"><img height="200" data-src="img/delta-hun.png"></a></img>&nbsp;&nbsp;&nbsp;<a href="img/results_ELTeC-fra.svg"><img height="200" data-src="img/delta-fra.png"></img></a><br/><a href="img/results_ELTeC-rom.svg"><img height="200" data-src="img/delta-rom.png"></a></img>&nbsp;&nbsp;&nbsp;<a href="img/results_ELTeC-slv.svg"><img height="200" data-src="img/delta-slv.png"></img></a><br/><br/>(Aktuell: deu, eng, fra, hun, por, rom, slv)
+<a href="img/results_ELTeC-hun.svg"><img height="200" data-src="img/delta-hun.png"></a></img>&nbsp;&nbsp;&nbsp;<a href="img/results_ELTeC-fra.svg"><img height="200" data-src="img/delta-fra.png"></img></a><br/><a href="img/results_ELTeC-rom.svg"><img height="200" data-src="img/delta-rom.png"></a></img>&nbsp;&nbsp;&nbsp;<a href="img/results_ELTeC-slv.svg"><img height="200" data-src="img/delta-slv.png"></img></a><br/><br/>(Actuellement: deu, eng, fra, hun, por, rom, slv)
+
+
+---
+### Longueur des phrases, 1840-1920
+<img data-src="img/avgsentlensregression-1.png" width="450"></img>&nbsp;&nbsp;&nbsp;<img data-src="img/avgsentlensregression-6.png" width="450"></img>
+
+English (25=>18\*\*\*) vs. French (23=>19, ns)
+
+
+---
+### Verbes de l'intériorité
+<img data-src="img/fra_1750-2000_all-perNovel.png" height="500"></img>
+
+Trois corpus, dont ELTeC-fra (core+ext)
 
 
 --
