@@ -204,11 +204,18 @@ EThAP, ENS de Lyon, 30 mai 2023
 * Il y a un 'header' commun <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
 * Les trois niveaux <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
   * Level 0: encodage TEI minimal (métadonnés + `div`, `p`, `hi`)
-  * Level 1: encodate TEI sémantique (`foreign`, `emph` etc.)
+  * Level 1: encodate TEI sémantique (p.ex. `hi` => `foreign`, `emph` etc.)
   * Level 2: encodage TEI avec annotation au niveau des token (UPos)
 * Contrôlés par des schémas <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="4" -->
-  * Système de schemas enchaînés
+  * Système des ODD enchaînés, voir [How to chain](https://teic.github.io/TCW/howtoChain-fr.html)
   * Validation avec RelaxNG et Schématron
+
+::
+- Le "ODD chaining": l'idée, c'est de produire plusieurs ODD en les dérivant les uns des autres;
+- Au lieu de choisir les élements dans TEI P5, on les choisit dans une ODD spécifique
+- Dans notre case: on prend les éléments du ODD précédant, et on y ajoute des éléments supplémentaires de la TEI P5 ; 
+- surtout du level 1 au level 2: ajouter des attributs pour l'annotation linguistique
+
 
 ---
 ### Métadonnées 
